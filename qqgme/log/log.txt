@@ -1,0 +1,1 @@
+{"tag": "function", "depth": 1, "time": 1672110691.2096064, "data": {"name": "text", "call_args": {"text": "\u9493\u9c7c", "kwargs": {}, "enter": false}, "start_time": 1672110689.9274552, "ret": null, "end_time": 1672110691.2096064}}
