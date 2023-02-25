@@ -1,1 +1,0 @@
-D:\gamescript\Python39\python -u dayecishu.py
