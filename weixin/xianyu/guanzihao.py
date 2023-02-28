@@ -122,20 +122,20 @@ def ddd1():
  '    sleep(3)\n'
  '    touch((150,384))')
 
-# touch((113,1781),times=80)
+touch((113,1781),times=200)
 # dd0()
 # ddd()
 # ddd1()
 # sleep(1)
-touch((113, 1781), times=500)
-
-while exists(Template(r"tpl1676288526243.png", record_pos=(0.383, 0.513), resolution=(540, 960))) == False:
-    if exists(Template(r"tpl1676341680303.png", record_pos=(0.003, 0.659), resolution=(1080, 2400))) != False:
-        touch(Template(r"tpl1676341680303.png", record_pos=(0.003, 0.659), resolution=(1080, 2400)))
-    touch((113, 1781), times=50)
-touch((113, 1781), times=5)
-
-sleep(3)
-touch(Template(r"tpl1676288526243.png", record_pos=(-0.408, -0.594), resolution=(1080, 2400)))
-touch(Template(r"tpl1676288553891.png", record_pos=(-0.262, 0.263), resolution=(1080, 2400)))
-touch(Template(r"tpl1676350342940.png", record_pos=(0.005, 0.531), resolution=(1080, 2400)))
+# touch((113, 1781), times=500)
+#
+# while exists(Template(r"tpl1676288526243.png", record_pos=(0.383, 0.513), resolution=(540, 960))) == False:
+#     if exists(Template(r"tpl1676341680303.png", record_pos=(0.003, 0.659), resolution=(1080, 2400))) != False:
+#         touch(Template(r"tpl1676341680303.png", record_pos=(0.003, 0.659), resolution=(1080, 2400)))
+#     touch((113, 1781), times=50)
+# touch((113, 1781), times=5)
+#
+# sleep(3)
+# touch(Template(r"tpl1676288526243.png", record_pos=(-0.408, -0.594), resolution=(1080, 2400)))
+# touch(Template(r"tpl1676288553891.png", record_pos=(-0.262, 0.263), resolution=(1080, 2400)))
+# touch(Template(r"tpl1676350342940.png", record_pos=(0.005, 0.531), resolution=(1080, 2400)))
