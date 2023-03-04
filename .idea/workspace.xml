@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ab0a74f-6bd3-4a2b-bcce-5498c4149476" name="变更" comment="2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/xianyu/guanzihao.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/xianyu/guanzihao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weixin/xianyu/sendmoney.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/xianyu/sendmoney.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weixin/xianyu/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/xianyu/test.py" afterDir="false" />
     </list>
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677328248420</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2">
+      <created>1677577486888</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677577486888</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
