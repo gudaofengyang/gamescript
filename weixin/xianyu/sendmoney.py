@@ -5,7 +5,7 @@ from airtest.core.api import *
 from airtest.cli.parser import cli_setup
 
 if not cli_setup():
-    auto_setup(__file__, logdir=True, devices=[
+    auto_setup(__file__, devices=[
         "android://127.0.0.1:5037/SKS6R20511023867?cap_method=JAVACAP&&ori_method=ADBORI&&touch_method=MAXTOUCH", ])
 
 # script content
@@ -104,7 +104,7 @@ def sendmoneyones(e, sid):
                 swipe((711, 572), vector=a1)
                 a2 = a3 + 145 * 8
                 print(f"{a2}" + "a2")
-
+                sleep(3)
                 def tou4():
                     touch((716, a2))
 
