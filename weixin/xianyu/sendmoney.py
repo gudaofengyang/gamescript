@@ -15,24 +15,17 @@ print("start...")
 def findtouch(res, color=None, lastaction=None):
     try:
         if color == 0:
-            b = exists(Template(rf"{res}", threshold=0.8, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-            while not b:
-                touch(Template(rf"{res}", record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-                b = exists(Template(rf"{res}", threshold=0.9, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-            touch(b)
+            while not exists(Template(rf"{res}", threshold=0.8, record_pos=(-0.004, 0.76), resolution=(1080, 2400))):
+                touch(Template(rf"{res}", record_pos=(-0.004, 0.76), resolution=(1080, 2400)))          
+            touch(Template(rf"{res}", threshold=0.8, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
         elif color is None:
-            b = exists(Template(rf"{res}", threshold=0.7, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-            while not b:
+            while not exists(Template(rf"{res}", threshold=0.7, record_pos=(-0.004, 0.76), resolution=(1080, 2400))):
                 touch(Template(rf"{res}", record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-                b = exists(Template(rf"{res}", threshold=0.7, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-            touch(b)
-        else:
-            b = exists(Template(rf"{res}", threshold=0.7, rgb=True, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-            while not b:
+            touch(Template(rf"{res}", threshold=0.7, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
+        else: 
+            while not exists(Template(rf"{res}", threshold=0.7, rgb=True, record_pos=(-0.004, 0.76), resolution=(1080, 2400))):
                 touch(Template(rf"{res}", record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-                b = exists(
-                    Template(rf"{res}", threshold=0.7, rgb=True, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
-            touch(b)
+            touch(Template(rf"{res}", threshold=0.7, rgb=True, record_pos=(-0.004, 0.76), resolution=(1080, 2400)))
     except TargetNotFoundError:
         if lastaction is not None:
             lastaction()
@@ -55,6 +48,11 @@ def sendmoneyones(e, sid):
     for i in range(e, 21):
         print(f"{i}" + "attendant")
         try:
+            if sid == 0:  # weixn
+                if not exists(Template('tpl1677135208075.png', threshold=0.7, record_pos=(-0.004, 0.76), resolution=(1080, 2400))):
+                    swipe((660, 300), (660, 1790), duration=2)
+                    findtouch("tpl1678628744314.png")
+
             tou()
             findtouch('tpl1677135224170.png', 0, tou)
             touch(Template(r"tpl1677135242993.png", record_pos=(0.005, 0.567), resolution=(1080, 2400)))
@@ -120,7 +118,7 @@ def sendmoneyones(e, sid):
     return i
 
 
-sid = 1  # 0:weixin 1:douyin
+sid = 0  # 0:weixin 1:douyin
 
 esc = 1
 for d in range(5):
